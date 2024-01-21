@@ -3,7 +3,10 @@ package arquivos;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class LerArquivoTxt {
 
@@ -14,14 +17,30 @@ public class LerArquivoTxt {
 
         Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
 
+        List<Pessoa> pessoas = new ArrayList<>();
+
         while (lerArquivo.hasNext()){
 
             String linha = lerArquivo.nextLine();
 
             if(linha != null && !linha.isEmpty()){
-                System.out.println(linha);
+
+                String[] dados = linha.split("\\;");
+                Pessoa pessoa = new Pessoa(dados[0], dados[1], Integer.parseInt(dados[2]));
+
+                pessoas.add(pessoa);
+
             }
 
         }
+
+        pessoas.forEach(System.out::println);
+
+        System.out.println("-----------------------------");
+
+        for (Pessoa pessoa : pessoas){
+            System.out.println(pessoa);
+        }
+
     }
 }
