@@ -49,7 +49,7 @@ public class ApachePoi2 {
                         break;
                 }
 
-            } /* Fim das celular da linha */
+            } /* Fim das celula da linha */
 
             pessoas.add(pessoa);
 
