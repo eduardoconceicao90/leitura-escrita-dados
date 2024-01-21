@@ -20,7 +20,8 @@ public class Arquivos {
         pessoas.add(p2);
         pessoas.add(p3);
 
-        File arquivo = new File("C:\\Users\\eduar\\Desktop\\Eduardo\\projetos back-end\\arquivos\\arquivo.txt");
+        //File arquivo = new File("C:\\Users\\eduar\\Desktop\\Eduardo\\projetos back-end\\arquivos\\arquivo.txt");
+        File arquivo = new File("C:\\Users\\eduar\\Desktop\\Eduardo\\projetos back-end\\arquivos\\arquivo.csv");
 
         if(!arquivo.exists()){
             arquivo.createNewFile();
