@@ -1,5 +1,7 @@
 package arquivos;
 
+import arquivos.domain.Pessoa;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

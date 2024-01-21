@@ -1,4 +1,4 @@
-package arquivos;
+package arquivos.domain;
 
 public class Pessoa {
 

@@ -1,4 +1,4 @@
-package arquivos;
+package arquivos.domain;
 
 public class Usuario {
 
@@ -47,5 +47,15 @@ public class Usuario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "login='" + login + '\'' +
+                ", senha='" + senha + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 }

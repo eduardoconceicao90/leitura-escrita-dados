@@ -1,5 +1,6 @@
-package arquivos;
+package arquivos.json;
 
+import arquivos.domain.Usuario;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
